@@ -1,0 +1,116 @@
+@import './theme.scss';
+// 超过一行，省略号展示，父级要加overflow:hidden
+@mixin text-ellipsis {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+// 超过两行省略
+@mixin two-line-ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // 控制多行的行数
+  -webkit-box-orient: vertical;
+}
+#main-root{
+  .menu-box{
+    position: fixed;
+    width: 100%;
+  }
+  #root-view{
+    padding-top: 55px;
+    .menu-fixed{
+      height: calc(100% - 55px)!important;
+    }
+  }
+}
+// 主要内容布局样式
+.main-layout {
+  //头部
+  .head {
+    background: #fff;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9e9e9;
+    //右侧筛选
+    .filter {
+      display: flex;
+      align-items: center;
+      .more-filter-btn {
+        color: $themeColor;
+        border-color: $themeColor;
+      }
+    }
+  }
+  // 主要内容
+  .main {
+    padding: 20px 20px 20px 20px;
+    .main-container {
+      background: #fff;
+      //表格
+      .table-list{
+        .el-table th,
+        .el-table td {
+          font-size: 14px;
+        }
+        .el-table th.el-table__cell {
+          background-color: #fafafa;
+          border-top: 1px solid rgb(235, 238, 245);
+          color: $deeper-black-color;
+          padding: 14px 0 14px;
+          &:first-child {
+            border-left: 1px solid rgb(235, 238, 245);
+          }
+          &:last-child {
+            border-right: 1px solid rgb(235, 238, 245);
+          }
+        }
+        .el-table__fixed-right{
+          &::before{
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}
+// 选择器
+.select-v2-popper {
+  min-width: 300px !important;
+  .el-select-dropdown__list {
+    width: 100% !important;
+    .el-select-dropdown__option-item {
+      font-size: 14px;
+    }
+  }
+}
+// 状态圆点
+.status-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0px auto;
+  vertical-align: middle;
+  &:hover {
+    opacity: 0.8;
+  }
+  // 可点击
+  &.status-circle-link {
+    cursor: pointer;
+  }
+  // 颜色
+  &.status-circle-error {
+    background: #f04134;
+  }
+  &.status-circle-success {
+    background: #00a854;
+  }
+  &.status-circle-warn {
+    background: #ffbf00;
+  }
+}

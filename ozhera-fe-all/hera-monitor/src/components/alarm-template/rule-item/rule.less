@@ -1,0 +1,126 @@
+
+
+
+.url-alarm-box{
+  font-size: 12px;
+  border: solid 1px #d9d9d9;
+  padding: 20px;
+  width: 900px;
+  .item-box-inner{
+    padding:15px 10px;
+    .el-input.is-disabled .el-input__inner{
+      color: #5b5c61;
+    }
+    .el-form-item{
+      margin-right: 0;
+      .el-form-item__content{
+        line-height: 28px;
+      }
+    }
+    .then-span {
+      margin: 0 2px;
+    }
+  }
+  
+}
+.unit-span{
+  display: inline-block;
+  padding-left: 5px;
+  background: #f3f4f7;
+  border: solid 1px #d9d9d9;
+  border-left: none;
+  border-right: none;
+  height: 28px;
+  line-height: 28px;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  padding: 0 7px;
+}
+.options-box {
+  position: absolute;
+  right: 0px;
+  top: -14px;
+  display: flex;
+  border-radius: 6px;
+  background: #409EFF;
+  z-index:10;
+  li{
+    padding:2px 5px;
+    cursor:pointer;
+    line-height: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  li + li {
+    border-left:solid 1px #fff;
+  }
+  .options-btn {
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .options-text{
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left:3px;
+  }
+  /deep/ .options-btn + .options-btn {
+    margin-top: 6px;
+  }
+}
+
+.options-box-left{
+  position: absolute;
+  top: -10px;
+  left:-1px;
+  background: #fff;
+  padding:0;
+  line-height: 18px;
+  z-index:11;
+  
+}
+.big-check-box{
+  height: 14px;
+   /deep/ .el-checkbox__inner{
+    width:18px;
+    height: 18px;
+    border-color: #409EFF;
+  }
+  /deep/ .el-checkbox__inner::after{
+    height: 8px;
+    width: 4px;
+    left: 5px;
+    top:2px;
+  }
+}
+.item-actvie-class{
+  border:solid 1px #67C23A;
+  animation: glow 1000ms ease-out infinite alternate; 
+}
+@keyframes glow {
+    0% {
+      border-color: #67C23A;
+      box-shadow: 0 0 5px rgba(103,194,58,.2), inset 0 0 5px rgba(103,194,58,.1), 0 0px 0 #67C23A;
+    }
+    100% {
+      border-color: #6f6;
+      box-shadow: 0 0 15px rgba(103,194,58,.6), inset 0 0 10px rgba(103,194,58,.4), 0 0px 0 #6f6;
+    }
+}
+.item-inner-inactive{
+  position: absolute;
+  left: 0;
+  top:0;
+  width:100%;
+  height: 100%;
+  z-index:10;
+  background: rgba(0,0,0,0.05);
+}
+.multiple-delete{
+  margin-top: -10px;
+}
+.strategy-input {
+  .strategy-input-box {
+    vertical-align: top;
+  }
+}

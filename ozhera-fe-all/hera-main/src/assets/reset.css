@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+.main-html,.main-html>body,#main-root,#root-view>div,#root-view>div>#app{
+  height: 100%;
+}
+:root{
+  --ant-primary-color: #1890ff;
+  --usual__title_color: rgba(0, 0, 0, 0.85);
+}
+#root-view{
+  height: calc(100% - 50px);
+}

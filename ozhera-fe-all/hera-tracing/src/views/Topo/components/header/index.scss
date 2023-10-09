@@ -1,0 +1,17 @@
+.header {
+  :deep(.el-form-item) {
+    margin-bottom: 0 !important;
+  }
+  .main {
+    background-color: #fff;
+    padding: 10px 20px;
+  }
+  .more {
+    margin: 0 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+
+
+}

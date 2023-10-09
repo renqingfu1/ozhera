@@ -1,0 +1,56 @@
+.footer-box {
+  text-align: center;
+  margin-top: 10px;
+}
+.width-300{
+  width:350px;
+}
+.width-200 >>> .el-input--mini {
+  width: 200px;
+}
+.width-400 {
+  width: 368px;
+}
+.tag-box {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 10px;
+  border-bottom: dashed 1px #eee;
+}
+.tag-box:hover {
+  background: #d9ecff;
+}
+.tag-box  .keylist-tag{
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: sub;
+}
+.tag-box .el-button--mini{
+  padding:5px;
+}
+.list-box {
+  border: dashed 1px #eee;
+  border-bottom: none;
+}
+.el-checkbox-group {
+  width: 630px;
+}
+
+.el-form-item__content .checkbox-box{
+  width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+}
+.tag-box .el-tag--mini{
+  max-width: 100px;
+  overflow: hidden;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  vertical-align: text-top;
+}
+.ips-box .el-form-item__content{
+  width: 220px;
+}

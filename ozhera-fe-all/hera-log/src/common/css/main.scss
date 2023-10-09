@@ -1,0 +1,240 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+span,
+a,
+i,
+em,
+strong {
+
+    padding:0 ;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    // font: 12px/1.5 'PingFangSC-Regular', 'Microsoft Yahei', Helvetica, Arial, Verdana, sans-serif;
+    color: #333;
+    min-width: 900px;
+    background-color: #eff0f4;
+}
+
+body, html ,#app {
+    height: 100%;
+}
+body #app, html #app {
+    // position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #303133;
+}
+.el-main{
+    overflow: hidden;
+}
+
+.app-box { // 单独运行
+	overflow-y: auto;
+  height: calc(100% - 50px);
+}
+
+#main-root .app-box { // 作为乾坤子应用
+  overflow-y: auto;
+  height: 100%;
+}
+
+
+
+// echart图表
+.echart {
+    display: flex;
+    width: 100%;
+    margin: 16px 0;
+    align-items: center;
+    justify-content: center;
+}
+// 暂无数据
+.no-data {
+    padding: 16px;
+    text-align: center;
+    color: #909399;
+    line-height: 2;
+    i {
+        font-size: 48px;
+        color: #C0C4CC;
+    }
+    &.small {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        i {
+            font-size: 21px;
+            margin-right: 4px;
+            vertical-align: middle;
+            & + br {
+                display: none;
+            }
+        }
+    }
+}
+.el-drawer__body{
+    border-top: 1px solid #EBEEF5;
+}
+.el-input--mini ,.el-input-number--mini{
+    width: 220px;
+}
+.overflow-ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+:root {
+    --ant-primary-color:#1890ff;
+    --ant-primary-1: #e6f7ff;
+}
+.el-button--primary{
+    background-color:var(--ant-primary-color);
+    border-color: var(--ant-primary-color);
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+    background-color: var(--ant-primary-color);
+}
+.el-button--mini, .el-button--small,.el-input__inner{
+    border-radius: 0;
+}
+.el-submenu__title:hover{
+    background: transparent;
+}
+
+.el-menu-item:focus, .el-menu-item:hover{
+    background-color: transparent;
+}
+.el-menu{
+    border-right: none;
+}
+.el-form-item__label{
+    color:rgba(0,0,0,0.85);
+}
+
+// 表格头部样式
+.el-table {
+	th{
+		background-color: #fafafa;
+	}
+	thead{
+		color: rgba(0,0,0,0.65);
+	}
+	.el-table__header-wrapper{
+    border-right:solid 1px #e8e8e8;
+		box-sizing: border-box;
+    border-radius: 4px 4px 0 0;
+	}
+  .el-table__header {
+		border:solid 1px #e8e8e8;
+    border-radius: 4px 4px 0 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .el-table td, .el-table th.is-leaf {
+    border-color: #e8e8e8;
+    color: #555;
+  }
+  th, th.is-leaf {
+    border: none;
+    color: #333;
+    line-height: 1;
+    & > .cell {
+      .el-table__column-filter-trigger {
+        line-height: 22px;
+      }
+      .caret-wrapper {
+        height: 22px;
+        vertical-align: top;
+        .sort-caret.ascending {
+          top: 0;
+        }
+        .sort-caret.descending {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.el-form-item__label::before{
+  display: none;
+}
+.el-textarea__inner{
+  border-radius: 0;
+}
+
+// 弹窗效果 水平垂直居中
+.el-dialog-v-align-middle .el-dialog {
+  top: 50%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  transform: translateY(-50%);
+  .el-dialog__body {
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+  }
+}
+
+.el-dialog__header{
+  border-bottom: solid 1px #f2f2f2;
+}
+.log-query-time-msg{
+  padding: 6px 10px;
+  color: #1790ff;
+}
+.log-query-time-msg.el-tooltip__popper.is-light{
+  // margin-bottom: px;
+  border-color: #1790ff;
+}
+.log-query-time-msg.el-tooltip__popper.is-light[x-placement^=top] .popper__arrow{
+  border-top-color: #1790ff;
+}

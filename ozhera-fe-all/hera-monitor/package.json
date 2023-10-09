@@ -1,0 +1,51 @@
+{
+  "name": "stasi-fe",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
+    "serve:fe": "vue-cli-service serve --mode devlinktest",
+    "build:development": "vue-cli-service build --mode development",
+    "build": "vue-cli-service build --mode production",
+    "build:production": "vue-cli-service build --mode production",
+    "deploy:production": "npm run build:production && lonecdn deploy production",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@sentry/tracing": "7.44.1",
+    "@sentry/vue": "7.44.1",
+    "axios": "^0.21.1",
+    "codemirror": "^5.62.2",
+    "core-js": "^3.6.5",
+    "dateformat": "^4.5.1",
+    "diff-match-patch": "^1.0.5",
+    "echarts": "5.1.2",
+    "element-ui": "^2.15.5",
+    "moment": "^2.29.4",
+    "qs": "^6.10.1",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.26.7",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.16.0",
+    "@sentry/webpack-plugin": "^1.20.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "prettier": "^2.2.1",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
